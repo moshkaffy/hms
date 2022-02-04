@@ -1,0 +1,31 @@
+PayValue To Do
+
+1. Update Assessment Details Table
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [AssessmentDetailsId]
+      ,[ServiceId]
+      ,[FieldName]
+      ,[CreatedBy]
+      ,[DateCreated]
+      ,[UpdatedBy]
+      ,[DateUpdated]
+      ,[IsDeleted]
+  FROM [OgunPayValue20122021].[dbo].[AssessmentDetails]
+  where ServiceId in ('17','24','19','21')
+
+2. Update RMRegister with UniqueId in Chairman Table
+3. Update RMRegister with RentRevisionPeriod in Chairman Table
+4. Update RMRegister code for saving to database with UniqueId and RentRevisionPeriod
+5  Update RMRegister code saving to database with value of SignatoryName ,SignatoryPosition with value pick from service Table
+6. Update BMSERVICEID in Service Table
+7. Update Service Table with the following colums
+      ,[ServiceHeader]
+      ,[ServiceSubHeader]
+	   ,[IsStandardLetterRequired]-- set to true
+      ,[StandardLetterDescriptions]
+      ,[SignatoryName]
+      ,[SignatoryPosition]
+8. Update Chairman table with the following column
+      StateGovernorName
+      RentRevisionPeriod
